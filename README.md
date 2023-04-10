@@ -6,17 +6,17 @@ template and a list of words to choose from.
 
 For example, if you had a story like:
 
-Once upon a time, there was a _animal_ who lived in a very _adjective_
-_place_.
+Once upon a time, there was a \_animal\_ who lived in a very \_adjective\_
+\_place\_.
 
 And some words to choose from like:
 
-animal:dragon
-animal:walrus
-place:cave
-adjective:peculiar
-adjective:scary
-adjective:peaceful
+1. animal:dragon
+2. animal:walrus
+3. place:cave
+4. adjective:peculiar
+5. adjective:scary
+6. adjective:peaceful
 
 The program might produce:
 
