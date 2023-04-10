@@ -1,0 +1,56 @@
+#success
+story-step1 story.txt
+story-step1 story2.txt
+
+#failure
+story-step1
+story-step1 story.txt story2.txt
+story-step1 none.txt
+story-step1 blank_no_end.txt
+
+#success
+story-step2 words.txt
+story-step2 diff_words.txt
+
+#failure
+story-step2
+story-step2 words.txt diff_words.txt
+story-step2 none.txt
+story-step2 bad_words.txt
+
+#success
+story-step3 words.txt story2.txt
+story-step3 words.txt story3.txt
+story-step3 words.txt story.txt
+
+#failure
+story-step3
+story-step3 words.txt
+story-step3 words.txt story2.txt x
+story-step3 words.txt sto.txt
+story-step3 wo.txt story2.txt
+story-step3 words.txt invalid_category_story.txt
+story-step3 words.txt invalid_category_story.txt
+story-step3 words.txt large_back_ref_story.txt
+story-step3 words.txt mixed_back_ref_story.txt
+
+#success
+story-step4 words.txt story2.txt
+story-step3 words.txt story3.txt
+story-step3 words.txt story.txt
+
+#success
+story-step4 -n words.txt story2.txt
+story-step4 -n words.txt story.txt
+story-step4 words.txt story2.txt
+story-step4 -n words.txt story5.txt
+
+#failure
+story-step4 -m words.txt story2.txt
+story-step4 -n words.txt story2.txt -z
+story-step4 -n words.txt
+story-step4 words.txt story2.txt -n
+story-step4 words.txt -n story2.txt
+story-step4 words.txt story4.txt
+story-step4 -n words.txt story4.txt
+story-step4 -n words.txt story6.txt
